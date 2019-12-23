@@ -36,8 +36,8 @@ public class ConsultorioController {
 		return this.pacienteDao.listar().toString();
 	}
 	
-	public void cadastraConsulta(Date data, Medico medico, Paciente paciente) {
-		Consulta consulta = new Consulta(data, medico, paciente);
+	public void cadastraConsulta(Date data, String medico, String paciente) {
+		Consulta consulta = new Consulta(data, new Medico(medico, null, null), new Paciente(paciente, null, null));
 		this.consultaDao.cadastraConsulta(consulta);
 	}
 }

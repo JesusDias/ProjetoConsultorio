@@ -7,6 +7,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import br.com.marcacao.controller.ConsultorioController;
+import br.com.marcacao.entites.Medico;
 
 public class Program {
 
