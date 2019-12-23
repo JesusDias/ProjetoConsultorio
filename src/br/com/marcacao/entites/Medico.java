@@ -47,7 +47,7 @@ public class Medico {
 
 		objectString.append("Nome: ").append(this.nome).append("\n");
 		objectString.append("CRP: ").append(this.crp).append("\n");
-		objectString.append("Especialização: ").append(this.especializacao);
+		objectString.append("Especialização: ").append(this.especializacao).append("\n");
 		return objectString.toString();
 	}	
 }

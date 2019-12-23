@@ -15,4 +15,6 @@ public class MedicoDao {
 	public List<Medico> listar(){
 		return tabelaMedico;
 	}
+	
+	
 }
