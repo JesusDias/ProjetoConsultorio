@@ -44,7 +44,9 @@ public class ConsultorioController {
 	}
 	
 	public String imprimeConsultas() {
-		return this.consultaDao.listar().toString();
+		return this.consultaDao.listar().toString()
+				+ this.medicoDao.listar().toString()
+				+ this.pacienteDao.listar().toString();
 	}
 }
 

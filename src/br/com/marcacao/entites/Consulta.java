@@ -2,11 +2,13 @@ package br.com.marcacao.entites;
 
 import java.util.Date;
 
+
 public class Consulta {
 	private Date data;
 	
 	private Medico medico;
 	private Paciente paciente;
+	
 	
 	public Consulta() {
 		
@@ -46,12 +48,7 @@ public class Consulta {
 	public String toString() {
 		return "Data Consulta: "
 				+ data
-				+ "\n"
-				+ "Dados do Medico: "
-				+ medico
-				+ "\n"
-				+ "Dados do Paciente: "
-				+ paciente;
+				+ "\n";
 	}
 
 	
