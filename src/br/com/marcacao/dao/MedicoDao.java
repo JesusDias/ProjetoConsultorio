@@ -16,5 +16,15 @@ public class MedicoDao {
 		return tabelaMedico;
 	}
 	
+	public Medico consultarMedicoPorNome(String nome) {
+		Medico medicoResult = null;
+		for (Medico medico : tabelaMedico) {
+			if (nome.equals(medico.getNome())) {
+				medicoResult = medico;
+			}
+		}
+		return medicoResult;
+	}
+	
 	
 }
