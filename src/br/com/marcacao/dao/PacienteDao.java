@@ -3,6 +3,7 @@ package br.com.marcacao.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.marcacao.entites.Medico;
 import br.com.marcacao.entites.Paciente;
 
 public class PacienteDao {
@@ -14,5 +15,16 @@ public class PacienteDao {
 	
 	public List<Paciente> listar(){
 		return listaPaciente;
+	}
+	
+	
+	public Paciente consultarPacientePorNome(String nome) {
+		Paciente pacienteResult = null;
+		for (Paciente paciente : listaPaciente) {
+			if (nome.equals(paciente.getNome())) {
+				pacienteResult = paciente;
+			}
+		}
+		return pacienteResult;
 	}
 }

@@ -74,6 +74,11 @@ public class Program {
 				String paciente = sc.nextLine();
 				consultorioController.cadastraConsulta(data, medico, paciente);
 			}
+			
+			if (opcao == 6) {
+				System.out.print(consultorioController.imprimeConsultas());
+			}
+			System.out.println();
 			System.out.println("1 - CADASTRAR MEDICO" + "\n2 - CADASTRAR PACIENTE" + "\n3 - CADASTRAR CONSULTA" +"\n4 - LISTAR MEDICOS" + "\n5 - LISTAR PACIENTES" + "\n6 - LISTAR CONSULTAS" + "\n7 - SAIR");
 			System.out.println();
 			

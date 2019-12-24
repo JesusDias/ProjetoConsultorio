@@ -42,6 +42,17 @@ public class Consulta {
 	public void setPaciente(Paciente paciente) {
 		this.paciente = paciente;
 	}
+	
+	public String toString() {
+		return "Data Consulta: "
+				+ data
+				+ "\n"
+				+ "Dados do Medico: "
+				+ medico
+				+ "\n"
+				+ "Dados do Paciente: "
+				+ paciente;
+	}
 
 	
 
